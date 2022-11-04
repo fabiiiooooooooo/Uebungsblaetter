@@ -1,32 +1,31 @@
 #include <stdio.h>
 
-int mul_plus(int a);
+int sum2n(int a);
 
 int main(void)
-{	
-	int a, k;
-	
-	for(k = 0; k <= 10; ++k){
-		a = k;
-		printf("%i\t%i\n", a, mul_plus(a));
-	}
+{
+	int a;
+	printf("Eingabe von a\n");
+	scanf("%i", &a);
+	printf("a: %i\tf(a): %i\n", a, sum2n(a));
+
 
 	return 0;
 }
 
-int mul_plus(int a) /*a entspricht S1, i entspricht S2, k entspricht S3, d enstspricht D1*/
+int sum2n(int a)
 {
-	int i, k, d;
-	d = 2;
-	i = 0;
-	k = 0;
+	int b = 0;
+	int c = 0;
+	int d = 2;
+	c += d;
 
-	k += d;
-	
 	while(a != 0){
 		--a;
-		i += k;
-		k += d;
+		b += c;
+		c += d;
 	}
-	return i;
+
+	return b;
+
 }
