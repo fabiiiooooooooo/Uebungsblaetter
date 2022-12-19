@@ -3,27 +3,22 @@
 #define SCANF_USER(a) (scanf("%d", &(a)))
 
 unsigned int fibonacci(void){
-        int i;
-        static int n = 5;
-        static unsigned int fib = 1;
-        int f1 = 0;
-        int f2 = 1;
 
-        for(i = 1; i <= n; i++){
-                fib = f1 + f2;
-                f2 = fib;
-                f1 = f2;
-        }
+        static unsigned int fib = 1;
+        static int f1 = 1;
+        int help;
+        help = fib;
+        fib =help + f1;
+        f1 = help;
+
         return fib;
 }
 
 unsigned int brady_seq(void){
-        int i;
         unsigned int b1, b2;
-        static int n = 5;
         static unsigned int bsq = 1; //bsq -> BradySeQuence
-
-        for(i = 1; i <= n; i++){
+                int help;
+                help = bsq;
                 bsq = b1 + b2;
                 b2 = bsq;
                 b1 = b2;

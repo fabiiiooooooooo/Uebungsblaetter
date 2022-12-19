@@ -14,18 +14,22 @@ int main(){
         unsigned int b1 = 2308U;
         unsigned int b2 = 4261U;
 
-        for (i = 0; i <= len; i++){
+        array_b[0] = b1;
+        array_b[1] = b2;
+        array_a[0] = 0;
+        array_a[1] = 1;
+        for (i = 2; i <= len; i++){
                 array_a[i] = fibonacci();
                 array_b[i] = brady_seq();
         }
 
         printf("\n");
         for (i = 0; i <= len; i++){
-                printf("%d", array_a[i]);                       //Test-Ausgabe Fibo
+                printf("%d , ", array_a[i]);                       //Test-Ausgabe Fibo
         }
         printf("\n");
         for (i = 0; i <= len; i++){
-                printf("%d", array_b[i]);                       //Test-Ausgabe Brady
+                printf("%d , ", array_b[i]);                       //Test-Ausgabe Brady
         }
 
         void init_brady();                                      //Usereingabe Brady Array C
@@ -39,19 +43,19 @@ int main(){
 
         printf("\n");
         for (i = 0; i <= len; i++){                             //Test-Ausgabe User-Brady
-                printf("%d", array_c[i]);
+                printf("%d , ", array_c[i]);
         }
         printf("\n");
         for (i = 0; i <= len; i++){
-                printf("%d", big_array_a[i]);                   //Test-Ausgabe Verhältnis 1
+                printf("%d , ", big_array_a[i]);                   //Test-Ausgabe Verhältnis 1
         }
         printf("\n");
         for (i = 0; i <= len; i++){
-                printf("%d", big_array_b[i]);                   //Test-Ausgabe Verhältnis 2
+                printf("%d , ", big_array_b[i]);                   //Test-Ausgabe Verhältnis 2
         }
         printf("\n");
         for (i = 0; i <= len; i++){
-                printf("%d", big_array_c[i]);                   //Test-Ausgabe Verhältnis 3
+                printf("%d , ", big_array_c[i]);                   //Test-Ausgabe Verhältnis 3
         }
         printf("\n");
 
