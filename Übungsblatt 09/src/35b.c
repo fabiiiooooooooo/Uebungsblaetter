@@ -14,12 +14,7 @@ int main(void)
 	printf("3. %s\n", str_str("", ""));
 	printf("4. %s\n", str_str("Schokolade", "Info"));
 	printf("5. %s\n", str_str("Schokolade", "lade"));
-	printf("\n");
-	printf("1. %s\n", strstr("Schokolade", ""));
-	printf("2. %s\n", strstr(" ", " "));
-	printf("3. %s\n", strstr("", ""));
-	printf("4. %s\n", strstr("Schokolade", "Info"));
-	printf("5. %s\n", strstr("Schokolade", "lade"));
+
 
 	return 0;
 } 

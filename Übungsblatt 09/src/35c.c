@@ -6,12 +6,12 @@
 
 int main(void)
 {
+	int i;
 	char token[20];
+	char input[20];
 	char *hours;
 	char *minutes;
 	char *seconds;
-	char input[20];
-	int i;
 
 	printf("Geben Sie eine Uhrzeit ein: ");
 	scanf("%s", input);

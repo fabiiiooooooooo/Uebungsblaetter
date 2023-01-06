@@ -23,7 +23,7 @@ int *array_d_copy(int v[], int n)
 	int i;
 	int *copy = malloc(n * sizeof(int));
 
-	if(copy != 0){
+	if(copy == NULL){
 		return NULL;
 	}
 
@@ -31,5 +31,7 @@ int *array_d_copy(int v[], int n)
 
 		copy[i] = v[i];
 	}
+
 	return copy;
+	free(copy);
 }
